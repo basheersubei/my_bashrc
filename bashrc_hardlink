@@ -136,4 +136,4 @@ alias cl='cd ..;ls'
 export PATH=$PATH:/usr/bin/turbine/bin
 export PATH=$PATH:/usr/bin/stc/bin
 alias qemu-hdd-cd='sudo qemu-system-x86_64 -hda ~/qemu-ubuntu/ubuntu.img -cdrom ~/qemu-ubuntu/ubuntu-14.04.2-server-amd64.iso -boot d -m 2G -enable-kvm'
-alias qemu-hdd='sudo qemu-system-x86_64 ~/qemu-ubuntu/ubuntu.img -m 2G -enable-kvm'
+alias qemu-hdd='sudo qemu-system-x86_64 ~/qemu-ubuntu/ubuntu.img -m 2G -enable-kvm -net user,hostfwd=tcp::10022-:22 -net nic & ~/ubuntu_shortcuts/run-qemu.sh'
