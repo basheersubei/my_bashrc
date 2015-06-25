@@ -137,3 +137,4 @@ export PATH=$PATH:/usr/bin/turbine/bin
 export PATH=$PATH:/usr/bin/stc/bin
 alias qemu-hdd-cd='sudo qemu-system-x86_64 -hda ~/qemu-ubuntu/ubuntu.img -cdrom ~/qemu-ubuntu/ubuntu-14.04.2-server-amd64.iso -boot d -m 2G -enable-kvm'
 alias qemu-start='~/ubuntu_shortcuts/run-qemu.sh'
+alias qemu-kill='killall -9 qemu-system-x86_64'
